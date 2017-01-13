@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Layout CSS para Tabelas</title>
+
+<!-- Definições do Layout da Tabela -->
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+
+<!-- Definições do Layout da Tabela -->
+<link href="css/layout_tbl01.css" id="layout" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+<!-- 
+function setLayout(vs_layout)
+{
+	document.getElementById('layout').href = "css/" + vs_layout;
+}
+-->
+</script>
+
+</head>
+<body>
+
+<!-- Divisão do menu -->
+<div id="menu">
+	<ul>
+		<li>
+			<a href="#" onclick="setLayout('layout_tbl01.css')">
+				Layout 01
+			</a>
+		</li>
+		<li>
+			<a href="#" onclick="setLayout('layout_tbl02.css')">
+				Layout 02
+			</a>
+		</li>
+		<li>
+			<a href="#" onclick="setLayout('layout_tbl03.css')">
+				Layout 03
+			</a>
+		</li>
+	</ul>
+</div>
+
+<!-- Divisão do container -->
+<div id="container">
+	<table>
+		<caption>
+			Titulo da Tabela
+		</caption>
+		<thead>
+			 <tr>
+					<th> head </th>
+					<th> head </th>
+					<th> head </th>
+					<th> head </th>
+			 </tr>
+		</thead>
+		<tfoot>
+			 <tr>
+					<th colspan="4"> foot </th>
+			 </tr>
+		</tfoot>
+		<tbody>
+			 <tr>
+					<th rowspan="2"> body </th>
+					<td> body </td>
+					<td> body </td>
+					<td> body </td>
+			 </tr>
+			 <tr>
+					<td> body </td>
+					<td> body </td>
+					<td> body </td>
+			 </tr>
+			 <tr>
+					<th> body </th>
+					<td> body </td>
+					<td> body </td>
+					<td> body </td>
+			 </tr>
+		</tbody>
+	</table>
+</div>
+
+</body>
+</html>
